@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>java script</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	             <script>
+	             	
+
+
+                function valid(){
+                	var name=document.getElementById("name");
+                	var number=document.getElementById("cell");
+                	var farjana_user=document.getElementById("username");
+                	var arju_email=document.getElementById("email");
+                	var rohit_pw=document.getElementById("pass");
+                	var halima_cpw=document.getElementById("conpass");
+                	
+
+
+                     if (name.value=='') {
+                     	document.getElementById("name_error").innerHTML="please input your name";
+                     	name.focus();
+                     	return false;
+                     }
+
+                      if (number.value=='') {
+                     	document.getElementById("phone_error").innerHTML="please input your number";
+                     	number.focus();
+                     	return false;
+                     }
+
+                     if (farjana_user.value==''){
+                     	document.getElementById("user_error").innerHTML="please input your username";
+                     	farjana_user.focus()
+                     	return false;
+                     }
+                     if (arju_email.value==''){
+                     	document.getElementById("alif_email").innerHTML="please input your email"
+                     	arju_email.focus();
+                     	return false;
+                     }
+                     if (rohit_pw.value==''){
+                     	document.getElementById("rohit_pass").innerHTML="please input your password"
+                     	rohit_pw.focus();
+                     	return false;
+                     }
+                     if (halima_cpw.value==''){
+                     	document.getElementById("con_error").innerHTML="please input your confirm password"
+                     	halima_cpw.focus();
+                     	return false;
+                     }else if (rohit_pw.value!=halima_cpw.value){
+                     	document.getElementById("con_error").innerHTML="your pass did not match";
+                     	halima_cpw.focus()
+                     	return false;
+                     }
+
+
+
+
+                }
+
+
+
+
+
+	             </script>
+
+	
+		<div class="wrapper">
+			<form>
+				<table width="400" border="0" cellpadding="0" cellspacing="10" align="center">
+					
+					<tr>
+                        
+                        <td>
+                        	<label for="name">Name<span class="req_star">*</span></label><br/>
+                        	<input type="text" id="name" class="input_field" placeholder="name">
+                        	<div class="error_mess" id="name_error"></div>
+                        </td>
+
+                   </tr>
+
+                    <tr>
+                        
+                        <td>
+                        	<label for="cell">phone<span class="req_star">*</span></label><br/>
+                        	<input type="text" id="cell" class="input_field" placeholder="">
+                        	<div class="error_mess" id=phone_error></div>
+                        </td>
+
+                   </tr>
+
+                   <tr>
+                        
+                        <td>
+                        	<label for="username">Username</label><br/>
+                        <input type="text" id="username" class="input_field" placeholder="Username">
+                        <div class="error_mess" id=user_error></div>
+                        </td>
+
+                   </tr>
+
+                 
+                  <tr>
+                        
+                        <td>
+                       	<label for="email">Email</label><br/>
+                  <input type="email" id="email" name="email"class="input_field" placeholder="email">
+                  <div class="error_mess" id="alif_email"></div>
+                        </td>
+
+                   </tr> 
+                    
+                     <tr>
+                        
+                        <td>
+                       	<label for="pass">Password</label><br/>
+                  <input type="password" id="pass" name="password"class="input_field">
+                  <div class="error_mess" id=rohit_pass></div>
+                        </td>
+
+                   </tr>
+
+
+                <td>
+                       	<label for="conpass">confirm-Password</label><br/>
+                  <input type="password" id="conpass" name="password"class="input_field">
+                  <div class="error_mess" id="con_error"></div>
+                        </td>
+
+                   </tr> 
+                 
+
+                   <tr>
+                   	<td>
+                   		<input type="submit" name="submit" onclick="return valid();" class="sub_but" value="SEND">
+                   	</td>
+
+                     </tr>
+
+
+
+
+
+				</table>
+			</form>
+		</div>
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

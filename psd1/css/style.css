@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+.full-body{
+	background-color: #fcdb00;
+	height: 740px;
+
+}
+
+.container{
+	margin-left: 140px;
+	margin-top: 60px;
+}
+#navbarNav{
+	margin-right: 231px;
+}
+.nav-item{
+	padding: 25px;
+}
+/*second part start*/
+.second-sec{
+	margin-top: 50px;
+
+}
+.second-sec p{
+	font-size: 16px;
+	text-align: justify;
+}
+.images{
+	display:flex;
+	margin-top: 40px;
+}
+.images img{
+	padding-left: 27px;
+
+
+}
+.tab img{
+	margin-left: 50px;
+}
+/*third parrt css*/
+.third-sec h1{
+	text-align: center;
+
+}
+.third-sec p{
+	text-align: center;
+
+}
+.photo{
+	margin-top: 100px;
+}
+/*four part css*/
+.four-sec{
+	background-color: #010101;
+	height: 731px;
+
+}
+.email input{
+    width: 430px;
+	margin-left: 350px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+}
+
+.submit button{
+	margin-left: 230px; 
+	padding: 7px;
+	width: 100px;
+	background-color:#fcdb00 ;
+	border: none;
+}
+.four-part .cg{
+	color:#fcdb00 ;
+	margin-top: 88px;
+	text-align: center;
+
+}
+.four-part .mg{
+	color:white;
+	text-align: center;
+}
+.social-icon{
+
+	margin-left: 640px;
+	display: inline-flex;
+}
+.social-icon img{
+	margin-top: 75px;
+	padding: 10px;
+	
+
+}
+.text p{
+	color: white;
+}
